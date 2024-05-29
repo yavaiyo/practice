@@ -1,24 +1,30 @@
 body {
-    width: 1029px;
+    font-family: Inter, Zen Kaku Gothic New, sans-serif;
     height: 3000px;
     background-color: #f7f7f7;
 }
-
 header {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    position: relative;
     position: fixed;
-    top: 0;
-    left: 0;
-    margin: 20px;
-    
 }
-.name {
-    margin-left: 50px;
+#hb-name {
+    display: flex;
+    margin-left: 40px;
 }
-.hb-btn, .name {
-    height: 20px;
-    width: 28px;
+.left-position {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.logo svg {
+    fill: black;
+    width: 180px;
+    margin-top: 8px;
+}
+
+.hb-btn {
     cursor: pointer;
     border-style: none;
     background-color: transparent;
@@ -39,32 +45,37 @@ header {
 .hb-btn > div:nth-of-type(3){
     bottom: 16px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 .nav-menu {
-    position: absolute;
-    top: 3px;
-    left: 400px;
+    display: flex;
     background-color: #fff;
     border-radius: 99999px;
-    font-size: 12px;
-    padding: 7px;
-}
-a {
-    color: black;
-    text-decoration: none;
+    gap: 0 22px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 23px;
+    margin-top: 15px;
 }
 .nav-maru {
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 8rem;
+    margin-right: 40px;
 }
-.en {
+.right-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     border-radius: 999px;
-    padding: 7px;
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
 }
-.mail {
-    background-color: #fff;
-    border-radius: 999px;
-    padding: 7px;
+.right-link svg {
+    fill: black;
+    width: 18px;
 }
