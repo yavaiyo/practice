@@ -1,0 +1,114 @@
+body {
+    font-family: 'Gothic Medium BBB JIS2004 AP', 'Hiragino Kaku Gothic', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Montserrat', sans-serif;
+}
+main {
+    position: relative;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-height: 500px;
+    height: 100vh;
+}
+.left-picture {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+.main-picture_slideImg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-content {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    z-index: 20;
+    color: white;
+    padding: 0 70px;
+}
+.picture-title {
+    width: 100%;
+}
+.subtitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+.maintitle {
+    font-family: 'din-2014', sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.link-all {
+    display: flex;
+}
+.text-link {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    text-align: right;
+    font-family: 'din-2014', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.yajirusi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+}
+svg {
+    fill: none;
+}
+.text-link:hover {
+    .yajirusi {
+        background-color: white;
+    }
+    svg {
+        fill: black;
+    }
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    padding: 0 70px;
+    margin-top: 56px;
+    width: 100%;
+    color: white;
+}
+.lines {
+    display: flex;
+}
+.lines > div {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1px;
+    width: 30px;
+    width: 100%;
+}
+.lines > .active-line {
+    background-color: white;
+}
+ul {
+    list-style: none;
+}
+.link {
+    display: flex;
+    padding: 29px 0 34px 0;
+    font-family: 'din-2014', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.link-name {
+    margin-right: 20px;
+    width: 100%;
+}
