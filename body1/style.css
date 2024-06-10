@@ -22,7 +22,7 @@ main {
 }
 .title-content {
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -30,22 +30,22 @@ main {
     z-index: 20;
     color: white;
     padding: 0 70px;
-}
-.picture-title {
+    margin: 0 auto;
     width: 100%;
 }
 .subtitle {
     font-size: 20px;
     font-weight: 600;
+    margin: 0 151px;
 }
 .maintitle {
     font-family: 'din-2014', sans-serif;
     font-size: 76px;
     font-weight: 400;
     margin-top: 16px;
-}
-.link-all {
-    display: flex;
+    margin-left: 151px;
+    letter-spacing: -1.68px;
+    line-height: 1;
 }
 .text-link {
     display: flex;
@@ -53,8 +53,11 @@ main {
     align-items: center;
     text-align: right;
     font-family: 'din-2014', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 151px;
+    max-width: 492px;
+    line-height: 1.86;
 }
 .yajirusi {
     display: flex;
@@ -88,6 +91,7 @@ svg {
 }
 .lines {
     display: flex;
+    margin: 0 151px;
 }
 .lines > div {
     background-color: rgba(255, 255, 255, 0.3);
@@ -105,8 +109,9 @@ ul {
     display: flex;
     padding: 29px 0 34px 0;
     font-family: 'din-2014', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 151px;
 }
 .link-name {
     margin-right: 20px;
