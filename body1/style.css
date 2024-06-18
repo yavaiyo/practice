@@ -75,6 +75,7 @@ main {
     height: 78px;
     width: 78px;
     border-radius: 50%;
+    transition: all ease 0.3s
 }
 svg {
     fill: none;
