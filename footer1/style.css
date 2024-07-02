@@ -1,0 +1,33 @@
+body {
+    height: 3000px;
+}
+.back {
+    position: relative;
+}
+.movie {
+    position: fixed;
+}
+footer {
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+.mark {
+    position: relative;
+    z-index: 11;
+}
+.link {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.text-link {
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.bottom-link {
+    position: relative;
+    display: flex;
+    color: white;
+}
