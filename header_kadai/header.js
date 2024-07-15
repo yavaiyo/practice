@@ -1,4 +1,6 @@
-const Open = document.getElementById('menu-open');
-const Close = document.getElementById('menu-close');
-const Menu = document.getElementsByClassName('menu');
+const Open = document.querySelector('menu-open');
+const Menu = document.querySelector('rightlink');
 
+Open.addEventListener('click', () => {
+    Menu.classList.toggle('active');
+});
