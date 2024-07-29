@@ -190,6 +190,9 @@ header {
         margin-top: 40px;
         position: relative;
     }
+    .navlink::after {
+        display: none;
+    }
     .hbnav {
         display: block;
         display: flex;
