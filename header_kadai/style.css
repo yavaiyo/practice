@@ -223,9 +223,14 @@ header {
     .y {
         transform: rotate(90deg)
     }
+    /* part2 */
+    /* .rightlink.size {
+        transition: none;
+    } */
 }
-.is-resize {
+/* part1 */
+/* .is-resize {
     .rightlink {
         transition: none;
     }
-}
+} */
