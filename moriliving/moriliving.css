@@ -1,0 +1,152 @@
+.back {
+    position:relative;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+iframe {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+.headernav {
+    padding-top: 2%;
+}
+.lang {
+    font-weight: 300;
+    display: flex;
+    column-gap: 10px;
+}
+.lien, .lija {
+    font-size: 14px;
+    font-family: UniversalSans, sans-serif;
+    font-weight: 400;
+   position: relative;
+   padding-bottom: 15px;
+}
+.lien::after, .lija::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+}
+.rightnav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+.rightlink {
+    display: flex;
+}
+.navlink {
+    padding: 10px;
+}
+.hbline {
+    cursor: pointer;
+}
+.line {
+    content: '';
+    background-color: black;
+    width: 40px;
+    height: 1.5px;
+    margin: 5px;
+}
+.middle {
+    content: '';
+    background-color: rgba(60, 21, 4, 0.2);
+    width: 40px;
+    height: 1.5px;
+    margin: 5px;
+}
+.hbmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    right: 0;
+    padding: 0 5%;
+    z-index: -1;
+}
+.hbheader {
+    position: relative;
+    padding: 10% 0 5% 0;
+}
+.hbheader::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(60, 21, 4, 0.2);
+}
+.title {
+    font-size: 18px;
+}
+.P {
+    margin-top: 5px;
+}
+.titleSPN {
+    font-family: TsukuGoPr5-R, sans-serif;
+    font-size: 13px;
+}
+.nopc {
+    display: none;
+}
+.hbONlink {
+    position: relative;
+    padding-bottom: 20px;
+}
+.hbONlink::after, .search::after, .content::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(60, 21, 4, 0.2);
+}
+.hblink {
+    display: flex;
+    padding-top: 20px;
+}
+.hblink > a {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-size: 22px;
+}
+.nameSPN {
+    font-size: 13px;
+}
+.search {
+    position: relative;
+    padding: 20px 0;
+}
+.content {
+    position: relative;
+    padding: 20px 0;
+}
+.contentname {
+    padding-top: 8px;
+}
+.info {
+    padding: 20px 0 10px 0;
+}
