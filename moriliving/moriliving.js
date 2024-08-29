@@ -6,6 +6,9 @@ const Middle = document.querySelector('.middle');
 const Header = document.querySelector('.header');
 const Back = document.querySelector('.menu-back');
 const Lang = document.querySelector('.lang');
+const Ja = document.querySelector('.lija');
+const En = document.querySelector('.lien');
+const Rightlink = document.querySelector('.rightlink');
 
 Line.addEventListener('click', () => {
     Menu.classList.toggle('active');
@@ -16,6 +19,9 @@ Line.addEventListener('click', () => {
     Header.classList.toggle('active');
     Back.classList.toggle('active');
     Lang.classList.toggle('active');
+    Rightlink.classList.toggle('active');
+    Ja.classList.toggle('active');
+    En.classList.toggle('active');
 });
 
 Back.addEventListener('click', () => {
@@ -27,4 +33,7 @@ Back.addEventListener('click', () => {
     Header.classList.remove('active');
     Back.classList.remove('active');
     Lang.classList.remove('active');
+    Rightlink.classList.remove('active');
+    Ja.classList.remove('active');
+    En.classList.remove('active');
 });

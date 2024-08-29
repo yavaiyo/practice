@@ -19,7 +19,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    color: white;
+    position: fixed;
+    z-index: 3;
 }
 .nav {
     display: flex;
@@ -35,7 +36,12 @@
     column-gap: 10px;
 }
 .lang.active {
-    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 50px;
+    font-weight: 300;
+    display: flex;
+    column-gap: 10px;
 }
 .lien, .lija {
     font-size: 14px;
@@ -43,8 +49,21 @@
     font-weight: 400;
    position: relative;
    padding-bottom: 15px;
+   color: white;
 }
-.lien::after, .lija::after {
+.lija {
+    color: rgba(255, 255, 255, 0.2);
+}
+.lija::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.lien::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -52,6 +71,31 @@
     bottom: 0;
     right: 0;
     background-color: white;
+}
+.lien.active, .lija.active {
+    font-size: 14px;
+    font-family: UniversalSans, sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 15px;
+}
+.lien.active::after, .lija.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+.lien.active {
+    color: black;
+}
+.lija.active {
+    color: #c9a872;
+}
+.lija.active::after {
+    background-color: #c9a872;
 }
 .rightnav {
     position: relative;
@@ -61,6 +105,10 @@
 }
 .rightlink {
     display: flex;
+    color: white;
+}
+.rightlink.active {
+    display: none;
 }
 .navlink {
     padding: 10px;
@@ -69,7 +117,9 @@
     cursor: pointer;
 }
 .hbline.active {
-    z-index: 3;
+    position: relative;
+    right: 5%;
+    top: 8px;
 }
 .top.active {
     background-color: #3c1504;
@@ -116,18 +166,20 @@
     right: 0;
     background-color: white;
     width: 40vw;
-    max-width: 640px;
-    height: 100%;
+    max-width: 750px;
+    height: 100vh;
     display: flex;
     right: 0;
     padding: 0 5% 0 49px;
     z-index: -1;
+    overflow-y: auto;
 }
 .hbmenu.active {
    z-index: 2;
 }
 .hbbody {
-    margin-right: auto; 
+    margin-right: auto;
+    width: 85%;
 }
 .hbheader {
     position: relative;
@@ -150,7 +202,8 @@
 }
 .titleSPN {
     font-family: TsukuGoPr5-R, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
+    color: #795a39;
 }
 .nopc {
     display: none;
@@ -180,7 +233,8 @@
     font-size: 22px;
 }
 .nameSPN {
-    font-size: 13px;
+    font-size: 11px;
+    color: #795a39;
 }
 .search {
     position: relative;
@@ -190,9 +244,35 @@
     position: relative;
     padding: 20px 0;
 }
+.contenttitle {
+    font-size: 13px;
+    color: #795a39;
+}
 .contentname {
     padding-top: 8px;
+    font-size: 13px;
 }
 .info {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 50px 0;
+    font-size: 13px;
+}
+.infoP {
+    padding-top: 10px;
+    color: #795a39;
+}
+
+@media (max-width: 767px) {
+    .rightlink {
+        display: none;
+    }
+    .hbmenu {
+        width: 100%;
+        max-width: 767px;
+    }
+    .lang.active {
+        position: absolute;
+        right: 5%;
+        top: 60px;
+        height: 48px;
+    }
 }
