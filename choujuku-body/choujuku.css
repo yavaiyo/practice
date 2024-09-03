@@ -27,10 +27,6 @@ body {
     color: white;
     letter-spacing: 5px;
 }
-.hover-picture {
-    position: absolute;
-    top: 0;
-}
 .top-pictures img {
     width: 100%;
     height: 100%;
@@ -92,4 +88,8 @@ body {
 }
 .slide-picture img {
     border-radius: 15px;
+}
+.one.active {
+    position: relative;
+    z-index: 3;
 }
