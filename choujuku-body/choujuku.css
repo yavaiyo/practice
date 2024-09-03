@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    min-width: 1200px;
+}
+.top {
+    height: 500px;
+    position: relative;
+}
+.top::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 39%;
+    background-image: url(https://www.pasconet.co.jp/choujuku/assets/images/content/content/bg01.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateY(70%);
+}
+.base-picture-p {
+    position: absolute;
+    top: 31.5%;
+    left: 11.7%;
+    z-index: 3;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 5px;
+}
+.hover-picture {
+    position: absolute;
+    top: 0;
+}
+.top-pictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom-picture {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 99;
+    padding-bottom: 60px;
+}
+.link-picture {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 5px 15px 5px;
+    text-align: center;
+    position: relative;
+}
+.link-picture img {
+    margin: 0 auto 10px auto;
+}
+.link-picture::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid #005099;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.select-picture {
+    width: 165px;
+}
+.txt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #005099;
+}
+.slide-picture {
+    display: flex;
+    position:  relative;
+    gap: 0 50px;
+    z-index: 5;
+    justify-content: center;
+    overflow: hidden;
+}
+.slide-picture img {
+    border-radius: 15px;
+}
