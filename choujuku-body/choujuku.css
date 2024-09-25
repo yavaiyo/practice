@@ -4,6 +4,10 @@ body {
 }
 .gallery02 {
     position: relative;
+    height: 100%;
+}
+.swiper {
+    height: 100%;
 }
 .swiper::before {
     display: block;
@@ -100,7 +104,8 @@ p {
     letter-spacing: 5px;
 }
 .thumb-media {
-    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
 }
 .select-picture::before {
     display: block;
@@ -128,6 +133,7 @@ p {
     top: 15px;
     right: 15px;
     z-index: 5;
+    transition: all 0.3s;
 }
 .link-picture {
     background-color: white;
@@ -135,6 +141,8 @@ p {
     padding: 30px 5px 15px 5px;
     width: 175px;
     overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
 }
 .select-picture {
     width: 120px;
@@ -164,12 +172,13 @@ p {
     font-weight: bold;
     position: relative;
     z-index: 2;
+    transition: all 0.3s;
 }
 .thumb-media-active .link-picture::before {
     background-color: #005099;
 }
 .thumb-media-active .link-picture {
-    transform: translateY(-10%);
+    transform: translateY(-20px);
 }
 .thumb-media-active .select-picture::before {
     transform: translate(-50%, 50%);
