@@ -264,9 +264,7 @@ footer {
     margin: 0 auto;
 }
 .about-content img {
-    width: 20%;
     border-radius:50%;
-    min-width: 172px;
     max-height: 172px;
 }
 .profile-name {
@@ -368,5 +366,45 @@ footer {
     }
     .home-link {
         font-size: 14px;
+    }
+    .profile-header {
+        padding: 15px 5px;
+    }
+    .profile-header h1 {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .profile-nav {
+        gap: 15px;
+        font-size: 20px;
+    }
+    .profile-top img {
+        height: 50vh;
+    }
+    .profile-about {
+        padding: 60px 10px;
+    }
+    .profile-name {
+        font-size: 18px;
+    }
+    .my-info li {
+        font-size: 14px;
+    }
+    .profile-works {
+        padding: 60px 10px 0 10px;
+    }
+    .works-content {
+        display: block;
+    }
+    .works-img-width {
+        margin: 0 auto;
+    }
+    .works-content p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .profile .title {
+        margin-bottom: 50px;
     }
 }
