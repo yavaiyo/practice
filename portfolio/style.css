@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 63px;
+}
+.profile-html {
+    scroll-padding-top: 0;
+}
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -88,9 +95,7 @@ section {
     flex-wrap: wrap;
     max-width: 1340px;
     margin: 0 auto;
-    gap: 20px;
-    
-    flex: 0 0 48%;
+    justify-content: space-between;
 }
 .img-name {
     font-size: 12px;
@@ -102,7 +107,7 @@ section {
     margin-top: 5px;
 }
 .img-width {
-    width: 398px;
+    width: 31%;
 }
 .works-img img {
     width: 100%;
@@ -301,6 +306,9 @@ footer {
 }
 
 @media (max-width: 767px) {
+    html {
+        scroll-padding-top: 47px;
+    }
     .header-content {
         padding: 15px;
     }
@@ -317,6 +325,9 @@ footer {
     }
     .works-img {
         padding: 0 20px;
+    }
+    .img-width {
+        width: 48%;
     }
     .title {
         font-size: 26px;
