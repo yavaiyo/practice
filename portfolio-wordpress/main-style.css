@@ -1,0 +1,427 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 63px;
+}
+.profile-html {
+    scroll-padding-top: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.wrapper {
+    padding-top: 73px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.title-name {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navlink {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.navlink a {
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.navlink a::after {
+    content: '';
+    background-color: black;
+    display: block;
+    width: 0;
+    height: 3px;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.navlink a:hover {
+    &::after {
+        width: 100%;
+    }
+}
+section {
+    padding: 90px 40px;
+}
+.top-img {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.top-img img {
+    width: 100%;
+    height: auto;
+    max-width: 965px;
+}
+.works {
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    width: 100%;
+}
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+.works-img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1340px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.img-name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.works-img p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+.img-width {
+    width: 31%;
+    margin-bottom: 40px;
+}
+.works-img img {
+    width: 100%;
+    height: auto;
+}
+.skill-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.skill-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 48%;
+    margin-bottom: 50px;
+}
+.skill-img img {
+    width: 60px;
+}
+.skill-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.skill-content p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.about {
+    background-color: #f7f7f7;
+}
+.about-img {
+    display: flex;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.about-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.name {
+    margin-bottom: 30px;
+}
+.about-img p {
+    font-size: 15px;
+    padding-left: 30px;
+}
+.contact p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+br {
+    display: none;
+}
+.sns {
+    text-align: center;
+}
+.back-top {
+    text-align: center;
+    background-color: #4c4c4c;
+    padding: 10px;
+}
+.back-top svg {
+    fill: white;
+}
+footer {
+    background-color: #333;
+    padding: 30px;
+}
+.copyright {
+    font-size: 10px;
+    text-align: center;
+    color: #797979
+}
+.article {
+    padding: 80px 20px;
+}
+.article p {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.article h3 {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.article h3::before {
+    content: '';
+    background-color: black;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.picture-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.site-info {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.site {
+    margin-bottom: 30px;
+}
+.site img {
+    width: 100%;
+    height:100%;
+}
+.info-title {
+    margin-top: 50px;
+    padding-left: 15px;
+}
+.home-link {
+    color: #1ca9e3;
+    text-align: center;
+}
+.profile-header {
+    box-shadow: none;
+    position: static;
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center;
+}
+.profile-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 20px;
+}
+.profile-nav {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.profile-top img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    max-width: 860px;
+    margin: 0 auto;
+}
+.about-content img {
+    border-radius:50%;
+    max-height: 172px;
+}
+.profile-name {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.my-info {
+    list-style: disc;
+    line-height: 1.8;
+    padding-left: 50px;
+}
+.works-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.works-content img {
+    width: 100%;
+}
+.works-content p {
+    margin-top: 30px;
+}
+.blue {
+    color: #1ca9e3;
+}
+.works-img-width {
+    width: 350px;
+}
+.profile-footer {
+    background-color: white;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    html {
+        scroll-padding-top: 47px;
+    }
+    .header-content {
+        padding: 15px;
+    }
+    .title-name {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .navlink {
+        font-size: 10px;
+        gap: 10px;
+    }
+    .top-img {
+        padding-bottom: 20px;
+    }
+    .works-img {
+        padding: 0 20px;
+    }
+    .img-width {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .skill-content {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .skill-img {
+        display: block;
+    }
+    .skill-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .about-img {
+        display: block;
+        width: 100%;
+    }
+    .selfie {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .about-img p {
+        font-size: 14px;
+        letter-spacing: 1.7px;
+        padding: 0 20px;
+    }
+    .contact p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .contact p {
+        padding: 0 20px;
+    }
+    br {
+        display: block;
+    }
+    .picture-title {
+        font-size: 20px;
+    }
+    .article p {
+        font-size: 14px;
+    }
+    .home-link {
+        font-size: 14px;
+    }
+    .profile-header {
+        padding: 15px 5px;
+    }
+    .profile-header h1 {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .profile-nav {
+        gap: 15px;
+        font-size: 20px;
+    }
+    .profile-top img {
+        height: 50vh;
+    }
+    .profile-about {
+        padding: 60px 10px;
+    }
+    .profile-name {
+        font-size: 18px;
+    }
+    .my-info li {
+        font-size: 14px;
+    }
+    .profile-works {
+        padding: 60px 10px 0 10px;
+    }
+    .works-content {
+        display: block;
+    }
+    .works-img-width {
+        margin: 0 auto;
+    }
+    .works-content p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .profile .title {
+        margin-bottom: 50px;
+    }
+}
