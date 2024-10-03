@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-content">
+                <h1 class="title-name"><a href="#">KOYAMA RYO</a></h1>
+                <nav class="nav">
+                    <ul class="navlink">
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href ="#skill">SKILL</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="top-img">
+            <img src="image/main.png">
+        </div>
+        <section class="works" id="works">
+            <h2 class="title">WORKS</h2>
+            <div class="works-img">
+                <div class="img-width">
+                    <a href="profile.html">
+                        <img src="image/works/profile.png">
+                        <h3 class="img-name">プロフィールサイト</h3>
+                        <p>HTML/CSS</p>
+                    </a>
+                </div>
+                <div class="img-width">
+                    <a href="coporate.html">
+                        <img src="image/works/html1.png">
+                        <h3 class="img-name">コーポレートサイト</h3>
+                        <p>HTML/CSS/JavaScript/レスポンシブ対応</p>
+                    </a>
+                </div>
+                <div class="img-width">
+                    <a href="corporate2.html">
+                        <img src="image/works/corporate2.png">
+                        <h3 class="img-name">コーポレートサイト2</h3>
+                        <p>HTML/CSS</p>
+                    </a>
+                </div>
+                <div class="img-width">
+                    <a href="university.html">
+                        <img src="image/works/wordpress2.png">
+                        <h3 class="img-name">大学のHP</h3>
+                        <p>WordPress/PHP</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="skill" id="skill">
+            <h2 class="title">SKILL</h2>
+            <div class="skill-img">
+                <div class="skill-content">
+                    <img src="image/skills/html.png">
+                    <div>
+                        <h3 class="skill-name">HTML/CSS</h3>
+                        <p>スマホで見ても表示崩れのないレスポンシブ対応も可能です。</p>
+                    </div>
+                </div>
+                <div class="skill-content">
+                    <img src="image/skills/js.png">
+                    <div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p>お問い合わせフォームや自動スクロールなど動きのあるWebさいとを作ることが可能です。</p>
+                    </div>
+                </div>
+                <div class="skill-content">
+                    <img src="image/skills/wordpress.png">
+                    <div>
+                        <h3 class="skill-name">WordPress</h3>
+                        <p>WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2 class="title">ABOUT</h2>
+            <div class="about-img">
+                <div class="selfie">
+                    <img src="image/about.png">
+                </div>
+                <div>
+                    <p class="name">小山諒</p>
+                    <p>テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="title">CONTACT</h2>
+            <p>お問い合わせは、
+                <br>
+                メールまたはＳＮＳにてお願いいたします。
+            </p>
+            <div class="sns">
+                <a href="#"><img src="image/icon_instagram.gif"></a>
+                <a href="#"><img src="image/icon_facebook.gif"></a>
+            </div>
+        </section>
+        <div class="back-top">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m296-345-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></a>
+        </div>
+        <footer>
+            <p class="copyright"><span>&copy;</span>KOYAMA RYO</p>
+        </footer>
+    </div>
+</body>
+</html>
